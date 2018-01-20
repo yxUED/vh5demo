@@ -66,6 +66,7 @@ export default {
         }
     }
   }
+
   .itemsLink:first-child {
     border-top: none;
   }

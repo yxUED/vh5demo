@@ -70,6 +70,7 @@ export default {
       text-overflow: ellipsis;
     }
    }
+
    .fixTitleCenter {
      margin-right: px2rem(100px);
    }

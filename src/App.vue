@@ -5,6 +5,7 @@
 <template>
   <div id="app">
     <common-header :title="title" :back-display="backDisplay"></common-header>
+
     <transition :name="transitionName" tag="div">
       <router-view class="content"></router-view>
     </transition>
@@ -97,6 +98,7 @@ export default {
       color: #000000;
     }
   }
+
   .content{
     width: 100%;
     height: 100%;
@@ -104,6 +106,7 @@ export default {
     margin-top: 50px;
     background-color: #f5f5f5;
   }
+
   /*页面过渡效果*/
   .slide-left-enter-active,
   .slide-left-leave-active,
@@ -118,16 +121,19 @@ export default {
     -webkit-backface-visibility: hidden;
     perspective: 1000;
   }
+
   .slide-right-enter {
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
     -webkit-transform: translate3d(-100%, 0, 0);
   }
+
   .slide-right-leave-active {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
     -webkit-transform: translate3d(100%, 0, 0);
   }
+
   .slide-left-enter {
     opacity: 0;
     transform: translate3d(100%, 0, 0);

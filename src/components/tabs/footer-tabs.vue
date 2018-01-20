@@ -3,7 +3,7 @@
 		<router-link :to="tab.url" v-for="(tab, index) in tabNames" :key="index" >
 			<div class="tab-item">
 				<img class="tab-icon" :src="navIndex === index ? tab.iconActive : tab.icon"/>
-				<div  :class="{ textActive: navIndex === index }">{{tab.name}}</div>
+				<div :class="{ textActive: navIndex === index }">{{tab.name}}</div>
 			</div>
 		</router-link>
 	</div>
@@ -51,12 +51,15 @@ export default {
 	height: px2rem(120px);
 	background: #fff;
 	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+
 	.tab-item{
 		margin-top: 10px;
+
 		.tab-icon{
 			width: 27px;
 			height: 27px;
 		}
+
 		.textActive {
 			color: #1296db;
 		}
