@@ -1,0 +1,5 @@
+const SET_CURRENT_PAGE_TITLE = 'SET_CURRENT_PAGE_TITLE';
+
+export default {
+  SET_CURRENT_PAGE_TITLE,
+};
