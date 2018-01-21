@@ -1,39 +1,53 @@
-# a h5 app demo of vue
+# 基于vue和thinkjs技术栈 前后端分离 h5 APP系统
 
-> a project for studying how to use vue and the related libraries to develop h5 app, and exploring the deep mechnism of vue, vuex and vue-router.
+## 目的
+> 带领有缘人系统学习vue技术栈，通过分析相关库的 源码 掌握各库的原理机制，提升基础技能；
+> 明目张胆招人。。。便于从围观群众中寻找 合适的 伙伴，共同折腾技术；
+> 帮助他人就是帮助自己，促进技术的向前发展贡献微薄之力；
 
-> 本项目是基于vue技术栈开发 h5 App 的演示项目，主要想基于此工程去深入学习 vue, vuex 和 vue-router 的源码!
+## 技术方案
+> 前后端分离，重前端，轻后端，后端以提供mock数据为主，以提高前端开发效率，H5项目开发完以后在服务器上用 Nginx部署。
 
-## vue
-> Vue是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue被设计为可以自底向上逐层应用。Vue的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。
+## 前端
+> 基于核心库vue, 及其生态库中的数据状态管理库vuex, 页面路由库vue-router和数据请求库axios构建;
+> 采用官方脚手架vue-cli 初始化项目;
+> 基于airbnb规范进行eslint 检验;
+> 如果需要与后端联调，请看后面的后端配置；
 
-## vuex
-> Vuex是一个专为Vue应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
+## 后端
+> 基于360奇舞团开源的node框架 thinkjs;
+> 数据库根据需要使用MySQL或者是mong；
 
-## vue-router
-> vue-router 就是路由，地址栏输什么，到什么页面，而且vue-router可以通过html5的history实现单页面应用，不刷新跳转，你切地址，只是页面上的组件的切换。另外vue-router还可以实现页面间传参等其他功能。
-
-## Build Setup
+### 启动前端工程
 
 ``` bash
-# install dependencies 安装项目相关依赖
+# 获取所有代码
+git clone https://github.com/yxUED/vh5demo.git
+
+# 进入目录
+cd vh5demo
+
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080 启动项目
-npm run dev
+# 启动项目
+npm run dev 或者 npm start
 
-# build for production with minification 生成最终上线包
+# 打包上线
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# 检验格式
+npm run lint
+```
+### 启动后端
+``` bash
 
-# run unit tests
-npm run unit
+# 进入后端工程目录
+cd server
 
-# run e2e tests
-npm run e2e
+# 安装依赖
+npm install
 
-# run all tests
-npm test
+# 启动项目
+npm start
 ```
