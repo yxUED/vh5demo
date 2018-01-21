@@ -1,5 +1,7 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+// import Vue from 'vue';
+// import Router from 'vue-router';
+import Vue from '../vues/vue';
+import Router from '../vues/vue-router';
 
 const Home = () => import('../pages/tabs/HomeTab'); // 首页
 const Mine = () => import('../pages/tabs/MineTab'); // 我的

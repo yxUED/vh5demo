@@ -1,4 +1,5 @@
 // axios配置
+// import axios from '../vues/axios';
 import axios from 'axios';
 
 axios.defaults.headers['X-Requested-With'] = 'XMLHttpRequest';
